@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+<style>
+  .main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(https://freenice.net/wp-content/uploads/2021/09/anh-anime-buon-4k-an-tuong.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  
+}
+h1 {
+  text-align: center;
+}
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+.top-box {
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      'showcase showcase'
+      'top-box-a top-box-b';
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
+  }
+}
+  </style>
+  <title>Bài tập tuần 8 - VÕ SỸ THIÊN</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="#">TRANG CHỦ</a>
+        </li>
+        <li>
+          <a href="#phimle">PHIM LẺ</a>
+        </li>
+        <li>
+          <a href="#phimbo">PHIM BỘ</a>
+        </li>
+        <li>
+          <a href="#anime">ANIME</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="top-container">
+      <header class="showcase">
+        <h1>Chào mừng bạn đã đến với thế giới phim.</h1>
+        <p>Bạn có thể tìm mọi loại phim yêu thít tại đây, ngay bây giờ!</p>
+        <a href="#phimle" class="btn">Xem ngay</a>
+      </header>
+      <div class="top-box top-box-a">
+        <h4>Hội viên tuần</h4>
+        <p class="price">279.000</p>
+        <a href="" class="btn">Mua ngay</a>
+      </div>
+      <div class="top-box top-box-b">
+        <h4>Hội viên VIP</h4>
+        <p class="price">309.000</p>
+        <a href="" class="btn">Mua ngay</a>
+      </div>
+    </section>
+      <h1 id="phimle">
+        Phim lẻ:
+      </h1>
+    <section class="boxes">
+      <div class="box">
+        <img src="https://static.vieon.vn/vieplay-image/thumbnail_v4/2021/01/05/i7a2qgjz_chuyen-tau-sinh-tu_horizontal-thumbnail-png.jpg" width=290px height=200px>
+        <h3>Chuyến tàu sinh tử (2016)</h3>
+        <a href="https://vieon.vn/chuyen-tau-sinh-tu.html"target=_"blank">Xem phim</a>
+      </div>
+      <div class="box">
+        <img src="https://static.vieon.vn/vieplay-image/thumbnail_v4/2021/01/05/wtk9qmeg_1_horizontal-thumbnail3dec0e4f2ca474c374961c3bd8638571.jpg" width=290px height=200px>
+        <h3>Em chưa 18</h3>
+        <a href="https://vieon.vn/em-chua-18.html"target=_"blank">Xem phim</a>
+      </div>
+      <div class="box">
+        <img src="https://ghienphimz.org/uploads/xoLEcwCbkI3HN7q0MpGyginfX215mdJD_banner_.jpg?v=1627733355" width=290px height=200px>
+        <h3>Qúa nhanh quá nguy hiểm 9</h3>
+        <a href="https://motphimtv.com/phim/qua-nhanh-qua-nguy-hiem-9-huyen-thoai-toc-do-9228.html"target=_"blank">Xem phim</a>
+      </div>
+      <div class="box">
+        <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/8/8d/Poster-phim-sieu-thu-cuong-no.png/220px-Poster-phim-sieu-thu-cuong-no.png" width=290px height=200px>
+        <h3>Siêu thú cuồng nộ</h3>
+        <a href="http://tvhai.org/xem-phim-sieu-thu-cuong-no-239555"target=_"blank">Xem phim</a>
+      </div>
+    </section>
+      <h1 id="phimbo">
+        Phim bộ:
+      </h1>
+    <section class="boxes">
+      <div class="box">
+        <img src="https://upload.wikimedia.org/wikipedia/vi/9/9d/Ng%C6%B0%E1%BB%9Di_ph%C3%A1n_x%E1%BB%AD_%28phim_Vi%E1%BB%87t_Nam%29.jpg" width=290px height=200px>
+        <h3>Người phán xử</h3>
+        <a href="https://www.vtvgiaitri.vn/video/nguoi-phan-xu-tap-1-4-4"target=_"blank">Xem phim</a>
+      </div>
+      <div class="box">
+        <img src="https://dep.com.vn/wp-content/uploads/2020/01/poster-chinh-thuc-phim-ha-canh-noi-anh.jpg" width=290px height=200px>
+        <h3>Hạ cánh nơi anh</h3>
+        <a href="https://motphimtv.com/xem-phim/ha-canh-noi-anh-tap-1-e4f5-7575_95772.html"target=_"blank">Xem phim</a>
+      </div>
+      <div class="box">
+        <img src="https://kenh14cdn.com/thumb_w/660/203336854389633024/2020/11/19/-1605766478297693807206.jpg" width=290px height=200px>
+        <h3>Hậu duệ mặt trời</h3>
+        <a href="https://vieon.vn/hau-due-mat-troi.html"target=_"blank">Xem phim</a>
+      </div>
+      <div class="box">
+        <img src="https://upload.wikimedia.org/wikipedia/vi/0/01/ThanDieuDaiHiep1995-ROCH95CoverBright.336145553_std.jpg" width=290px height=200px>
+        <h3>Thần điêu đại bịp</h3>
+        <a href="https://vieon.vn/than-dieu-dai-hiep-long-tieng.html"target=_"blank">Xem phim</a>
+      </div>
+    </section>
+      <h1 id="anime">
+        Anime:
+      </h1>
+    <section class="boxes">
+      <div class="box">
+        <img src="https://recmiennam.com/wp-content/uploads/2018/07/hinh-nen-luffy-one-piece-32.jpg" width=290px height=200px>
+        <h3>One Piece (1999)</h3>
+        <a href="https://yeuphimmoiv.com/one-piece-dao-hai-tac-vietsub-hd-10/"target=_"blank">Xem phim</a>
+      </div>
+      <div class="box">
+        <img src="https://gamek.mediacdn.vn/133514250583805952/2021/6/23/n4vzpchy1920x1080-conan-16244342350691741943586.jpg" width=290px height=200px>
+        <h3>Thám tử lừng danh Conan</h3>
+        <a href="https://pops.vn/series/tham-tu-lung-danh-conan-5e857135574ebb00334427a2"target=_"blank">Xem phim</a>
+      </div>
+      <div class="box">
+        <img src="https://static2.vieon.vn/vieplay-image/carousel_web_v4/2021/02/25/e5k1xnz6_1920x1080-dragonball_1920_1080.webp" width=290px height=200px>
+        <h3>7 viên ngọc rồng</h3>
+        <a href="https://motphimtv.com/xem-phim/bay-vien-ngoc-rong-tap-1-1262_21207.html"target=_"blank">Xem phim</a>
+      </div>
+      <div class="box">
+        <img src="https://i.pinimg.com/originals/18/a5/9b/18a59b40e8d6416203bed835e6f10b76.jpg" width=290px height=200px>
+        <h3>Naruto</h3>
+        <a href="https://pops.vn/series/naruto-5fc5f17fca8af00034b846ae"target=_"blank">Xem phim</a>
+      </div>
+    </section>
+    
+    <footer>
+      <p>Bản quyền thuộc: Võ Sỹ Thiên(10điểm)</p>
+    </footer>
+  </div>
+  </body>
+</html>
+
