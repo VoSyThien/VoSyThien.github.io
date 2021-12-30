@@ -1,0 +1,131 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 13px;
+    width: 1000px;
+    margin: 0px auto;
+
+}
+
+#menu-top{
+    background: black;
+    height: 40px;
+}
+
+#banner{
+    height: auto;
+    width: 1000px;
+}
+
+#main #left{
+    width: 700px;
+    min-height: 400px;
+    float: left;    
+}
+
+#main #right{
+    width: 300px;
+    min-height: 400px;
+    float: left;
+}
+
+#footer{
+    background: #444444;
+    width: 1000px;
+    text-align: center;
+    height: 60px;
+    color: #fff;
+    clear: left;
+    line-height: 60px;
+}
+
+#menu-top ul{
+    margin: 0;
+    padding: 0;
+}
+
+#menu-top ul li{
+    list-style: none;
+    float: left;
+}
+
+#menu-top ul li a{
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    padding: 0px 75px 0px 75px;
+    border-right: 1px solid #f1f1f1 ;
+}
+
+.menu1{
+    background: blue;
+}
+
+#banner img{
+    width: 1000px;
+    height: 500px;
+}
+
+#main #left ul{
+    margin: 0;
+    padding: 0;
+}
+
+#main #left ul li{
+    list-style: none;
+    clear: left;
+    border-bottom: 2px solid #ccc;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#main #left ul li img{
+    float: left;
+    margin-right: 10px;
+}
+
+#main #left ul li h2{
+    font-size: 15px;
+    margin-top: 0px;
+}
+#main{
+    margin-top: 20px;
+}
+
+#main #right .menu-right ul{
+    margin: -15px 0px 0px 0px;
+    padding: 0;
+    border: 1px solid #ccc;
+
+}
+
+#main #right .menu-right ul li{
+    list-style: none;
+}
+
+#main #right .menu-right ul li a{
+    display: block;
+    text-decoration: none;
+    line-height: 35px;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    text-indent: 25px;
+    color: #848484; 
+    font-size: 15px;
+}
+
+#main #right .menu-right ul li a:hover{
+    color: blue;
+}
+
+#main #right .menu-right h3{
+    background: #194d58;
+    height: 40px;
+    margin-top: 0px;
+    text-indent: 15px;
+    font-size: 15px;
+    line-height: 40px;
+    color: white;
+    text-indent: 30px;
+}
